@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@drawable/fondo_tateti"
+    >
+
+    <TextView
+        android:id="@+id/tvJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugador:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/tvSimbolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Símbolo:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvJugador"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp" />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@id/tvSimbolo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <!-- 9 botones para el tablero -->
+        <Button android:id="@+id/btn0" style="@style/BotonTablero"/>
+        <Button android:id="@+id/btn1" style="@style/BotonTablero"/>
+        <Button android:id="@+id/btn2" style="@style/BotonTablero"/>
+        <Button android:id="@+id/btn3" style="@style/BotonTablero"/>
+        <Button android:id="@+id/btn4" style="@style/BotonTablero"/>
+        <Button android:id="@+id/btn5" style="@style/BotonTablero"/>
+        <Button android:id="@+id/btn6" style="@style/BotonTablero"/>
+        <Button android:id="@+id/btn7" style="@style/BotonTablero"/>
+        <Button android:id="@+id/btn8" style="@style/BotonTablero"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
